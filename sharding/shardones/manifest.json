@@ -1,0 +1,1652 @@
+{
+  "layers": [
+    {
+      "layer_id": "layer1",
+      "layer_type": "Sequential",
+      "shard_file": "layer_000.pt",
+      "config": {},
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer2",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_001.pt",
+      "config": {
+        "in_channels": 3,
+        "out_channels": 64,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            64,
+            3,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 6912,
+          "sha1": "fd3b239ad2bfc4f02c99cbfa64bb29e9e599c73e"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 256,
+          "sha1": "3b62df983ffda0030f6a1767ab99b034f4ef4611"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer3",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_002.pt",
+      "config": {
+        "num_features": 64,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 256,
+          "sha1": "b26ab0a3ed806a9539edd5bdff933376e455991c"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 256,
+          "sha1": "b376885ac8452b6cbf9ced81b1080bfd570d9b91"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 256,
+          "sha1": "b376885ac8452b6cbf9ced81b1080bfd570d9b91"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            64
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 256,
+          "sha1": "b26ab0a3ed806a9539edd5bdff933376e455991c"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer4",
+      "layer_type": "ReLU",
+      "shard_file": "layer_003.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer5",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_004.pt",
+      "config": {
+        "in_channels": 64,
+        "out_channels": 128,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            128,
+            64,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 294912,
+          "sha1": "e8e294bdfe91537182634bb4ceaebcb444109ba5"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "f0c2c3f04ec919c5968b79d0530800ac7230cea5"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer6",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_005.pt",
+      "config": {
+        "num_features": 128,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "766ac9c59781b4a9ad5dfd80e8cb2cf2a361f551"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "766ac9c59781b4a9ad5dfd80e8cb2cf2a361f551"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer7",
+      "layer_type": "ReLU",
+      "shard_file": "layer_006.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer8",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_007.pt",
+      "config": {
+        "in_channels": 128,
+        "out_channels": 128,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 589824,
+          "sha1": "47b725445c71fd79df6d55f0670ddca0bdce0a40"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "db6835d9ce6e43871fb0a8569d67787ded5f76b2"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer9",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_008.pt",
+      "config": {
+        "num_features": 128,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "766ac9c59781b4a9ad5dfd80e8cb2cf2a361f551"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "766ac9c59781b4a9ad5dfd80e8cb2cf2a361f551"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer10",
+      "layer_type": "ReLU",
+      "shard_file": "layer_009.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer11",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_010.pt",
+      "config": {
+        "in_channels": 128,
+        "out_channels": 128,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          2,
+          2
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 589824,
+          "sha1": "bcae71a6c83536905fa8b91ee07998b9a6c3c610"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "357037d7f386c7114b0c342b47d69d85af1a9a27"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer12",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_011.pt",
+      "config": {
+        "num_features": 128,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "766ac9c59781b4a9ad5dfd80e8cb2cf2a361f551"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "766ac9c59781b4a9ad5dfd80e8cb2cf2a361f551"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer13",
+      "layer_type": "ReLU",
+      "shard_file": "layer_012.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer14",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_013.pt",
+      "config": {
+        "in_channels": 128,
+        "out_channels": 128,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 589824,
+          "sha1": "a5eca860a9926e2b5184c10bf666fd7fc1f57e0b"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "4b38882a1424157ed8387c0be68d699a07ef63f7"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer15",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_014.pt",
+      "config": {
+        "num_features": 128,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "766ac9c59781b4a9ad5dfd80e8cb2cf2a361f551"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "766ac9c59781b4a9ad5dfd80e8cb2cf2a361f551"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer16",
+      "layer_type": "ReLU",
+      "shard_file": "layer_015.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer17",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_016.pt",
+      "config": {
+        "in_channels": 128,
+        "out_channels": 128,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 589824,
+          "sha1": "8ca341cf1e52db8211b5abec9090284d49694cd3"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "cf016dcac11101a3ff48791f1b8786dca8ac1ecb"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer18",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_017.pt",
+      "config": {
+        "num_features": 128,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "766ac9c59781b4a9ad5dfd80e8cb2cf2a361f551"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 512,
+          "sha1": "766ac9c59781b4a9ad5dfd80e8cb2cf2a361f551"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer19",
+      "layer_type": "ReLU",
+      "shard_file": "layer_018.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer20",
+      "layer_type": "MaxPool2d",
+      "shard_file": "layer_019.pt",
+      "config": {
+        "kernel_size": 2,
+        "stride": 2,
+        "padding": 0,
+        "dilation": 1,
+        "return_indices": false,
+        "ceil_mode": false
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer21",
+      "layer_type": "Dropout2d",
+      "shard_file": "layer_020.pt",
+      "config": {
+        "p": 0.0,
+        "inplace": false
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer22",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_021.pt",
+      "config": {
+        "in_channels": 128,
+        "out_channels": 256,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            256,
+            128,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1179648,
+          "sha1": "ed271147212b505a0b9ac67ef1063d02882b6810"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "d138bbff8199367ad20a05e9f0bc4e7646284045"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer23",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_022.pt",
+      "config": {
+        "num_features": 256,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "6f4e2a19e1e2ab7930a5bd791d688a5a7c23cb82"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "60cacbf3d72e1e7834203da608037b1bf83b40e8"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "60cacbf3d72e1e7834203da608037b1bf83b40e8"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "6f4e2a19e1e2ab7930a5bd791d688a5a7c23cb82"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer24",
+      "layer_type": "ReLU",
+      "shard_file": "layer_023.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer25",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_024.pt",
+      "config": {
+        "in_channels": 256,
+        "out_channels": 256,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 2359296,
+          "sha1": "afeb061c22ab8bae3d5735bf72da50685992648b"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "481e3c40c4aca9b9b822f6e53702c11a0f7ceb99"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer26",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_025.pt",
+      "config": {
+        "num_features": 256,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "6f4e2a19e1e2ab7930a5bd791d688a5a7c23cb82"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "60cacbf3d72e1e7834203da608037b1bf83b40e8"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "60cacbf3d72e1e7834203da608037b1bf83b40e8"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "6f4e2a19e1e2ab7930a5bd791d688a5a7c23cb82"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer27",
+      "layer_type": "ReLU",
+      "shard_file": "layer_026.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer28",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_027.pt",
+      "config": {
+        "in_channels": 256,
+        "out_channels": 256,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 2359296,
+          "sha1": "476938c30a58778ac088b36fa0509b0a93b7fa58"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "755b375ec1df710d4ac82928f3555749880cef74"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer29",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_028.pt",
+      "config": {
+        "num_features": 256,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "6f4e2a19e1e2ab7930a5bd791d688a5a7c23cb82"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "60cacbf3d72e1e7834203da608037b1bf83b40e8"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "60cacbf3d72e1e7834203da608037b1bf83b40e8"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "6f4e2a19e1e2ab7930a5bd791d688a5a7c23cb82"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer30",
+      "layer_type": "ReLU",
+      "shard_file": "layer_029.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer31",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_030.pt",
+      "config": {
+        "in_channels": 256,
+        "out_channels": 512,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            512,
+            256,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 4718592,
+          "sha1": "f1ec9d91e1b00aa39fd327c0464a37d9b3492836"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            512
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 2048,
+          "sha1": "2c4fc2f4108c85ddb8d37536f906a69f55e9a89f"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer32",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_031.pt",
+      "config": {
+        "num_features": 512,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            512
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 2048,
+          "sha1": "3b7a394f52a114e6f54def7deb051ca30cd6e9d8"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            512
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 2048,
+          "sha1": "605db3fdbaff4ba13729371ad0c4fbab3889378e"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            512
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 2048,
+          "sha1": "605db3fdbaff4ba13729371ad0c4fbab3889378e"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            512
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 2048,
+          "sha1": "3b7a394f52a114e6f54def7deb051ca30cd6e9d8"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer33",
+      "layer_type": "ReLU",
+      "shard_file": "layer_032.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer34",
+      "layer_type": "MaxPool2d",
+      "shard_file": "layer_033.pt",
+      "config": {
+        "kernel_size": 2,
+        "stride": 2,
+        "padding": 0,
+        "dilation": 1,
+        "return_indices": false,
+        "ceil_mode": false
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer35",
+      "layer_type": "Dropout2d",
+      "shard_file": "layer_034.pt",
+      "config": {
+        "p": 0.0,
+        "inplace": false
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer36",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_035.pt",
+      "config": {
+        "in_channels": 512,
+        "out_channels": 2048,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            2048,
+            512,
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 4194304,
+          "sha1": "b7feadfc8cc1d5cdd5845f748e5ff229459ecc92"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 8192,
+          "sha1": "2830d012584d98521ae52939dd0438a5bb4f0a4f"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer37",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_036.pt",
+      "config": {
+        "num_features": 2048,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 8192,
+          "sha1": "c915081b8822bd88dddee086c5422aae696635ed"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 8192,
+          "sha1": "0631457264ff7f8d5fb1edc2c0211992a67c73e6"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 8192,
+          "sha1": "0631457264ff7f8d5fb1edc2c0211992a67c73e6"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 8192,
+          "sha1": "c915081b8822bd88dddee086c5422aae696635ed"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer38",
+      "layer_type": "ReLU",
+      "shard_file": "layer_037.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer39",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_038.pt",
+      "config": {
+        "in_channels": 2048,
+        "out_channels": 256,
+        "kernel_size": [
+          1,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          0,
+          0
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            256,
+            2048,
+            1,
+            1
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 2097152,
+          "sha1": "d24b5507ea0794e18f9d0eb096cc280a62ffc0af"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "4576bcfd994c3fb30db6b5b80f0595c8836abdd2"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer40",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_039.pt",
+      "config": {
+        "num_features": 256,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "6f4e2a19e1e2ab7930a5bd791d688a5a7c23cb82"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "60cacbf3d72e1e7834203da608037b1bf83b40e8"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "60cacbf3d72e1e7834203da608037b1bf83b40e8"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "6f4e2a19e1e2ab7930a5bd791d688a5a7c23cb82"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer41",
+      "layer_type": "ReLU",
+      "shard_file": "layer_040.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer42",
+      "layer_type": "Conv2d",
+      "shard_file": "layer_041.pt",
+      "config": {
+        "in_channels": 256,
+        "out_channels": 256,
+        "kernel_size": [
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "padding": [
+          1,
+          1
+        ],
+        "dilation": [
+          1,
+          1
+        ],
+        "groups": 1,
+        "bias": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 2359296,
+          "sha1": "bc6c34aa5437f9453764e79a93d2f2678a503143"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "a77dd3d0780abb0d8dc0cd43abed6afc6ce7dcaa"
+        }
+      ],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer43",
+      "layer_type": "BatchNorm2d",
+      "shard_file": "layer_042.pt",
+      "config": {
+        "num_features": 256,
+        "eps": 1e-05,
+        "momentum": 0.05,
+        "affine": true,
+        "track_running_stats": true
+      },
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "6f4e2a19e1e2ab7930a5bd791d688a5a7c23cb82"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "60cacbf3d72e1e7834203da608037b1bf83b40e8"
+        }
+      ],
+      "buffers": [
+        {
+          "name": "running_mean",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "60cacbf3d72e1e7834203da608037b1bf83b40e8"
+        },
+        {
+          "name": "running_var",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024,
+          "sha1": "6f4e2a19e1e2ab7930a5bd791d688a5a7c23cb82"
+        },
+        {
+          "name": "num_batches_tracked",
+          "shape": [],
+          "dtype": "torch.int64",
+          "size_bytes": 8,
+          "sha1": "05fe405753166f125559e7c9ac558654f107c7e9"
+        }
+      ]
+    },
+    {
+      "layer_id": "layer44",
+      "layer_type": "ReLU",
+      "shard_file": "layer_043.pt",
+      "config": {
+        "inplace": true
+      },
+      "parameters": [],
+      "buffers": []
+    },
+    {
+      "layer_id": "layer45",
+      "layer_type": "Linear",
+      "shard_file": "layer_044.pt",
+      "config": {},
+      "parameters": [
+        {
+          "name": "weight",
+          "shape": [
+            1000,
+            256
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 1024000,
+          "sha1": "4e7f7cedc127c7e3ca59246cfb28bffa0a0f585f"
+        },
+        {
+          "name": "bias",
+          "shape": [
+            1000
+          ],
+          "dtype": "torch.float32",
+          "size_bytes": 4000,
+          "sha1": "415e72b5630dac04615b601492151037686b99e0"
+        }
+      ],
+      "buffers": []
+    }
+  ]
+}
