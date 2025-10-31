@@ -10,6 +10,7 @@ struct TensorInfo {
     void* dev_ptr;
     void* host_ptr;
     bool in_vram;
+    bool locked = false;
 };
 
 class VGMMController {
@@ -21,6 +22,11 @@ public:
     void evict(const std::string& id);
     void mark_used(const std::string& id);
     void print_status_and_log();
+    void print_status();
+    void sync_device();
+    void lock_tensor(const std::string& id);
+    void unlock_tensor(const std::string& id);
+
 
     size_t get_size_bytes(const std::string& id);
     size_t get_vram_used() const;
@@ -31,7 +37,7 @@ private:
     size_t vram_limit;
     size_t vram_total;
     Logger& logger;
-    Scheduler scheduler;
+    LRUScheduler scheduler;
     std::mutex mtx;
 
     bool has_enough_vram(size_t bytes) const;

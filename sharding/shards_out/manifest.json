@@ -1,0 +1,746 @@
+{
+  "shards": [
+    {
+      "file": "shard_001.pt",
+      "group": "classifier",
+      "total_bytes": 1028000,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "classifier.weight",
+          "shape": [
+            1000,
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024000,
+          "sha1": "2b2a24546ceb2a138ceb0575148915e3d0f5002c"
+        },
+        {
+          "param_name": "classifier.bias",
+          "shape": [
+            1000
+          ],
+          "dtype": "float32",
+          "bytes": 4000,
+          "sha1": "1a859ea4bfad600e64e37f94474056df01bfc9c6"
+        }
+      ]
+    },
+    {
+      "file": "shard_002.pt",
+      "group": "features.0",
+      "total_bytes": 7168,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.0.weight",
+          "shape": [
+            64,
+            3,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 6912,
+          "sha1": "3082e8d0eafff45d0c68363f79180795d29c4799"
+        },
+        {
+          "param_name": "features.0.bias",
+          "shape": [
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 256,
+          "sha1": "a9e3c467cd621e17d79ff59641ae3f963dbbeff3"
+        }
+      ]
+    },
+    {
+      "file": "shard_003.pt",
+      "group": "features.1",
+      "total_bytes": 512,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.1.weight",
+          "shape": [
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 256,
+          "sha1": "247dfb9a85a4799a999281359707c37bdb2405ed"
+        },
+        {
+          "param_name": "features.1.bias",
+          "shape": [
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 256,
+          "sha1": "c1e209a9ef53a9ef8f387e6a35536bb70f27957d"
+        }
+      ]
+    },
+    {
+      "file": "shard_004.pt",
+      "group": "features.12",
+      "total_bytes": 590336,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.12.weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 589824,
+          "sha1": "3c692df1d402964e66891e3381fedcb12653fed7"
+        },
+        {
+          "param_name": "features.12.bias",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "249c9b5de2add21fb757135ff49a7ad80b790ecb"
+        }
+      ]
+    },
+    {
+      "file": "shard_005.pt",
+      "group": "features.13",
+      "total_bytes": 1024,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.13.weight",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "0dea76181f3786298e3e3a8c02c2c3f6b57246fb"
+        },
+        {
+          "param_name": "features.13.bias",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "3842d1a945a54a0270cb7fcde2eb4b9f2291e797"
+        }
+      ]
+    },
+    {
+      "file": "shard_006.pt",
+      "group": "features.16",
+      "total_bytes": 590336,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.16.weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 589824,
+          "sha1": "793b9113e3a6b84aef1030790989107ac15aca21"
+        },
+        {
+          "param_name": "features.16.bias",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "7423bb10655f9fac6f2bd3c2735b0fe1eb6af676"
+        }
+      ]
+    },
+    {
+      "file": "shard_007.pt",
+      "group": "features.17",
+      "total_bytes": 1024,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.17.weight",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "e23700e7601f457a0902d5568b28cb3b918cef23"
+        },
+        {
+          "param_name": "features.17.bias",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "4d8c92e0c74c078494473a17bb85c12a6b26bd1a"
+        }
+      ]
+    },
+    {
+      "file": "shard_008.pt",
+      "group": "features.20",
+      "total_bytes": 590336,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.20.weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 589824,
+          "sha1": "1cf86f843bbc5696284ea70f3e8f2d0e34fe2d26"
+        },
+        {
+          "param_name": "features.20.bias",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "84568a6c0186dbbf2eb2b7c42b697ccdbeb430dd"
+        }
+      ]
+    },
+    {
+      "file": "shard_009.pt",
+      "group": "features.21",
+      "total_bytes": 1024,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.21.weight",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "8e9fb281ebdbfb85ba27d37f1130d1e3051b0e1e"
+        },
+        {
+          "param_name": "features.21.bias",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "3b73b5730bc59000f98a0545166b0415d20808b2"
+        }
+      ]
+    },
+    {
+      "file": "shard_010.pt",
+      "group": "features.26",
+      "total_bytes": 1180672,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.26.weight",
+          "shape": [
+            256,
+            128,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 1179648,
+          "sha1": "337152f990d7bffa3e6ff624aa6c73ee0f010f72"
+        },
+        {
+          "param_name": "features.26.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "c251a9e7a60b00004ce019da3135e7d3ef7498e9"
+        }
+      ]
+    },
+    {
+      "file": "shard_011.pt",
+      "group": "features.27",
+      "total_bytes": 2048,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.27.weight",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "9df22c7089c2b4a0898fd4b981614062d34497a1"
+        },
+        {
+          "param_name": "features.27.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "7d0a8c06f92cfe2dac8f4d4636657c4b5ec6193a"
+        }
+      ]
+    },
+    {
+      "file": "shard_012.pt",
+      "group": "features.30",
+      "total_bytes": 2360320,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.30.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 2359296,
+          "sha1": "5914d0ffd5aba4ebf2db50cf5e638d9b482a53b6"
+        },
+        {
+          "param_name": "features.30.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "8bde60ffdebd490b6e6eb7be59402fd52db6284c"
+        }
+      ]
+    },
+    {
+      "file": "shard_013.pt",
+      "group": "features.31",
+      "total_bytes": 2048,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.31.weight",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "1fe4efc57478c50916f39db4804b3968c28a083f"
+        },
+        {
+          "param_name": "features.31.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "2c8914c35547e7e4527ab23d3ba5cd8fd416ca6e"
+        }
+      ]
+    },
+    {
+      "file": "shard_014.pt",
+      "group": "features.34",
+      "total_bytes": 2360320,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.34.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 2359296,
+          "sha1": "29bb32216755b16671053b4bb716cbea0ccefe46"
+        },
+        {
+          "param_name": "features.34.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "0ab085b20eda543057232bb34ade770e23542daf"
+        }
+      ]
+    },
+    {
+      "file": "shard_015.pt",
+      "group": "features.35",
+      "total_bytes": 2048,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.35.weight",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "da5ae25312e11f0ef1b3b6729134024a9af5ac0a"
+        },
+        {
+          "param_name": "features.35.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "35326d150a9a41196766187a5df93e2465bf98e8"
+        }
+      ]
+    },
+    {
+      "file": "shard_016.pt",
+      "group": "features.38",
+      "total_bytes": 4720640,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.38.weight",
+          "shape": [
+            512,
+            256,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 4718592,
+          "sha1": "eb2c923a0a068c38f31bb086eca42d0d903060ea"
+        },
+        {
+          "param_name": "features.38.bias",
+          "shape": [
+            512
+          ],
+          "dtype": "float32",
+          "bytes": 2048,
+          "sha1": "c38bd6e5140a7cee8922415e3b6afc9f9309b187"
+        }
+      ]
+    },
+    {
+      "file": "shard_017.pt",
+      "group": "features.39",
+      "total_bytes": 4096,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.39.weight",
+          "shape": [
+            512
+          ],
+          "dtype": "float32",
+          "bytes": 2048,
+          "sha1": "7a61fc9352a55d7d828784fc9fac12a7c399b80d"
+        },
+        {
+          "param_name": "features.39.bias",
+          "shape": [
+            512
+          ],
+          "dtype": "float32",
+          "bytes": 2048,
+          "sha1": "f732f7e79f4875882773cab1b01ad6f0b2da2200"
+        }
+      ]
+    },
+    {
+      "file": "shard_018.pt",
+      "group": "features.4",
+      "total_bytes": 295424,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.4.weight",
+          "shape": [
+            128,
+            64,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 294912,
+          "sha1": "8e518615b3c16a4e189af853a51fc706603a92fa"
+        },
+        {
+          "param_name": "features.4.bias",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "0bf352aeb3305e07768ff39f4eddea3878c35d03"
+        }
+      ]
+    },
+    {
+      "file": "shard_019.pt",
+      "group": "features.44",
+      "total_bytes": 4202496,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.44.weight",
+          "shape": [
+            2048,
+            512,
+            1,
+            1
+          ],
+          "dtype": "float32",
+          "bytes": 4194304,
+          "sha1": "b27e50fbca90ffbfd2e968ad4336b0a6a4dc15a4"
+        },
+        {
+          "param_name": "features.44.bias",
+          "shape": [
+            2048
+          ],
+          "dtype": "float32",
+          "bytes": 8192,
+          "sha1": "f2b7eaa54bc872875f5420cc7d610e09e663fcac"
+        }
+      ]
+    },
+    {
+      "file": "shard_020.pt",
+      "group": "features.45",
+      "total_bytes": 16384,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.45.weight",
+          "shape": [
+            2048
+          ],
+          "dtype": "float32",
+          "bytes": 8192,
+          "sha1": "ebd08cab4877f84f1be138c4204e493388971539"
+        },
+        {
+          "param_name": "features.45.bias",
+          "shape": [
+            2048
+          ],
+          "dtype": "float32",
+          "bytes": 8192,
+          "sha1": "df8a8801d87a0330d3639657c32ad7c46b152564"
+        }
+      ]
+    },
+    {
+      "file": "shard_021.pt",
+      "group": "features.48",
+      "total_bytes": 2098176,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.48.weight",
+          "shape": [
+            256,
+            2048,
+            1,
+            1
+          ],
+          "dtype": "float32",
+          "bytes": 2097152,
+          "sha1": "05979dc8611ed8b9f1db6cbf7b84109fab813213"
+        },
+        {
+          "param_name": "features.48.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "2ff7354c24cc2b7830be0b0a60e208f7ee8ddbfa"
+        }
+      ]
+    },
+    {
+      "file": "shard_022.pt",
+      "group": "features.49",
+      "total_bytes": 2048,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.49.weight",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "9e36e36099ceb55a78b8053f970a4d0497aaaefa"
+        },
+        {
+          "param_name": "features.49.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "a0feac43f8ffcf711a54481b72873901dfe0b59c"
+        }
+      ]
+    },
+    {
+      "file": "shard_023.pt",
+      "group": "features.5",
+      "total_bytes": 1024,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.5.weight",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "b06483ab00ff4cbda8e814376882322ed3e71409"
+        },
+        {
+          "param_name": "features.5.bias",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "06f519ef337942ee932198ce62dc4263f121fb48"
+        }
+      ]
+    },
+    {
+      "file": "shard_024.pt",
+      "group": "features.52",
+      "total_bytes": 2360320,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.52.weight",
+          "shape": [
+            256,
+            256,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 2359296,
+          "sha1": "8bc568e93aee7147a8d4c0fe75a26a79a29c5975"
+        },
+        {
+          "param_name": "features.52.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "bb6659ec513ea69182f613ed90bf6b33449aad71"
+        }
+      ]
+    },
+    {
+      "file": "shard_025.pt",
+      "group": "features.53",
+      "total_bytes": 2048,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.53.weight",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "d452859864b5c02ae27f59d60705f7d7d7363eba"
+        },
+        {
+          "param_name": "features.53.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 1024,
+          "sha1": "e2804a14d0e549789922acea9f2634a611877df4"
+        }
+      ]
+    },
+    {
+      "file": "shard_026.pt",
+      "group": "features.8",
+      "total_bytes": 590336,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.8.weight",
+          "shape": [
+            128,
+            128,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "bytes": 589824,
+          "sha1": "ac390362b8ce0cc63331e5e76eda941a6990ab2e"
+        },
+        {
+          "param_name": "features.8.bias",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "540ee1404b2a08d7033f2b00d87da5d678bde59f"
+        }
+      ]
+    },
+    {
+      "file": "shard_027.pt",
+      "group": "features.9",
+      "total_bytes": 1024,
+      "n_tensors": 2,
+      "items": [
+        {
+          "param_name": "features.9.weight",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "961b9af1e938ee38e0cab0b64be7a8d37ee5880a"
+        },
+        {
+          "param_name": "features.9.bias",
+          "shape": [
+            128
+          ],
+          "dtype": "float32",
+          "bytes": 512,
+          "sha1": "e292903ba7b113e7c94d65537d2a79e84e1dd8a5"
+        }
+      ]
+    }
+  ]
+}
